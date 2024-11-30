@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance table</title>
+    <link rel="stylesheet" href="./views/maintstyle.css">
+</head>
+<body>
+  <h1>All records</h1>
+  <br><br>
+  <div class="main">
+    <table class="maint">
+    <tr>
+      <th>DATE</th>
+      <th>CAR</th>
+      <th>TYPE</th>
+      <th>KILOMETERS</th>
+      <th>COST</th>
+    </tr>
+
+    <% for( let rec of allrecords) { %>
+      <tr>
+    <td><%=rec.Date%></td>
+    <td><%=rec.Car%></td>
+    <td><%=rec.Type%></td>
+    <td><%=rec.Kilometers%></td>
+    <td><%=rec.Cost%></td>
+    </tr>
+    <% } %>
+
+    
+  </table>
+
+  <div>
+   
+  </div>
+    
+</body>
+</html>
